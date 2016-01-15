@@ -9,6 +9,13 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+# For pretty URL's (middleman site)
+activate :directory_indexes
+
+# for relative URL's during delpoying to gh-pages like subfolders
+activate :relative_assets
+set :relative_links, true
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
@@ -37,8 +44,11 @@ end
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
-
+  activate :minify_css
+  #
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+  #
+  # To change the names of files everytime we made any change in code so that cache problem doesn't occur
+  activate :asset_hash
 end
