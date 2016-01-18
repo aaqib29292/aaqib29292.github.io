@@ -1,0 +1,36 @@
+#skills {
+  // @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
+  
+  /* ====================================
+  Home content
+  ==================================== */
+  .home-content {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #2F2F2F;
+    background-size: cover;
+    background-position: center center;
+
+    .content {
+      position: relative;
+      top: 50vh;
+      transform: translateY(-50%);
+      text-align: center;
+      h2 {
+        color: #CFCFCF;
+      }
+      p {
+        color: #7A7A7A;
+        font-size: 1.5em;
+        line-height: 28px;
+        span {
+          color: #A2A2A2;
+        }
+      }
+    }
+  }
+
+
+
+}
