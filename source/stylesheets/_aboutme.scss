@@ -1,10 +1,11 @@
-#home {
+#aboutme {
+  // @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
 
   /* ====================================
   Home content
   ==================================== */
   .home-content {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #2F2F2F;
     background-size: cover;
@@ -17,37 +18,36 @@
       text-align: center;
       h2 {
         color: #CFCFCF;
-        font-size: 2.2em;
-        margin-bottom: 1em;
       }
       p {
         color: #7A7A7A;
         font-size: 1.5em;
-        line-height: 1em;
+        line-height: 28px;
         span {
-          a {
-            color: #A2A2A2;
-            border: 1px solid transparent;
-            border-radius: 10px;
-            padding: 0px 5px 2px 0px;
-            &:hover {
-              text-decoration: none;
-              border: 1px solid #A2A2A2;
-              border-radius: 10px;
-              padding: 0px 5px 2px;
-            }
-          }
+          color: #A2A2A2;
         }
       }
     }
   }
 
-  i {
+  .leftside {
     position: absolute;
     color: white;
-    font-size: 5vw;
-    right: 3vw;
+    font-size: 5em;
+    left: 0.7em;
     top: 50%;
     transform: translateY(-50%);
   }
+
+
+  .rightside {
+    position: absolute;
+    color: white;
+    font-size: 5em;
+    right: 0.7em;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
 }
